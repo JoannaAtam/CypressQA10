@@ -9,6 +9,6 @@ describe( "User can visit GoIT page", () => {
         //wylogowanie działa, ale zauwazyłam, że po odpaleniu go za pierwszym razem zawsze się wywala (zbyt długi czas oczekiwania).
         //co może być powodem? cypress jest za szybki (szybszy niż załadownie lementów strony i nie odnajduje rozwijanego menu?)
         cy.get('#open-navigation-menu-mobile').click();
-        cy.get(':nth-child(12) > .next-bve2vl').click();
+        cy.contains('Log out').click();
       }); 
     });
